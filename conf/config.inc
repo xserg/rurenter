@@ -60,23 +60,25 @@ define('COMMON_LIB', PROJECT_ROOT.'lib/');
 /**
  * Определение типа сервера - локальный или рабочий
  */
-if (preg_match("/Z:/", PROJECT_ROOT) || preg_match("/Z:/",$_SERVER['argv'][0])) {
+//if (preg_match("/Z:/", PROJECT_ROOT) || preg_match("/Z:/",$_SERVER['argv'][0])) {
+if ($_SERVER['SERVER_NAME'] == 'rurenter') {
     // ЭТО ТЕСТОВЫЕ СЕРВЕРА
     /**
      * Параметры соединения с базой данных
     */
-    define('DB_USER', 'villa');
-    define('DB_PASS', 'villa');
-    ini_set('include_path', COMMON_LIB.';'.COMMON_LIB.'\pear;.');
+    define('DB_USER', 'root');
+    define('DB_PASS', '');
+    ini_set('include_path', COMMON_LIB.':'.COMMON_LIB.'pear:.');
     ini_set('display_errors', 'On');
     error_reporting(E_ERROR | E_WARNING | E_PARSE);
     //error_reporting(E_ERROR);
 	//error_reporting(E_ALL);
+    //error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
     define('SERVER',   'rurenter');
     define('SERVER_URL',   'http://'.SERVER);
     define('SERVER_TYPE',   'local');
     define('DB_HOST',       'localhost');
-    define('DB_NAME', 'rurenter');
+    define('DB_NAME', 'xserg_rurenter');
     define('REFRESH_TIME', 10);
     define('IMAGE_URL', '/img/');
     define('MAIL_DRIVER', 'mail');
