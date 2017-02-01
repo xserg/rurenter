@@ -1,0 +1,45 @@
+#header {
+    clear: both;
+    display: block;
+}
+#header {
+    padding-bottom: 5px;
+}
+
+#masthead .globalnav {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background: url("/img/skin/header-nav.png") repeat-x scroll left -360px rgb(13, 102, 173);
+}
+
+#masthead .globalnav table {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    list-style-type: none;
+    height: 34px;
+    background: url("/img/skin/header-nav.png") no-repeat scroll right -80px transparent;
+}
+#masthead .globalnav td {
+    text-align: center;
+    font-size: 1.2em !important;
+    font-weight: normal;
+}
+#masthead .globalnav td a:hover, #masthead .globalnav td a:active {
+    color: rgb(194, 217, 234);
+}
+#masthead .globalnav td a {
+    display: block;
+    width: 93%;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 1.2em !important;
+    padding: 0.3em;
+    font-size: 1.2em !important;
+}
+
+

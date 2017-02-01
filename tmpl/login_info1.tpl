@@ -1,0 +1,1 @@
+<form><p class="u">{HELLO} <strong>{USERNAME}</strong> <a class="exit" href="?logout">Выход</a></p></form>

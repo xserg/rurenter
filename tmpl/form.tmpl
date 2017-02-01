@@ -1,0 +1,87 @@
+{tabs}
+{qf_javascript}
+<form {qf_attributes}>
+<!-- BEGIN qf_hidden_loop -->
+{qf_hidden}
+<!-- END qf_hidden_loop -->
+
+<table width=90% class="formtable">
+<!-- BEGIN qf_errors -->
+    <tr>
+        <td colspan="2">
+                <!-- BEGIN qf_error_loop -->
+                <span style="color: #FF0000;">{qf_error}</span><BR>
+                <!-- END qf_error_loop -->
+        <BR></td>
+    </tr>
+<!-- END qf_errors -->
+<!-- BEGIN qf_main_loop -->
+    <!-- BEGIN qf_header -->
+    <tr>
+        <td colspan="2">
+         <h2>{qf_header}</h2>
+        </td>
+    </tr>
+    <!-- END qf_header -->
+    <!-- BEGIN qf_static -->
+    <tr valign="top">
+        <td colspan=4>
+            {qf_label}
+            {qf_element}
+        </td>
+    </tr>
+    <!-- END qf_static -->
+	<!-- BEGIN qf_radio -->
+    <tr valign="top">
+        <th>
+            <b>{qf_label}</b>
+        </th>
+        <td>
+            {qf_element}
+        </td>
+    </tr>
+    <!-- END qf_radio -->
+	<!-- BEGIN qf_element -->
+    <tr valign="top">
+        <th>
+            <!-- BEGIN qf_element_required --><span style="color: #FF0000;">*</span><!-- END qf_element_required -->
+            {qf_label}
+        </th>
+        <td>
+            <!-- BEGIN qf_element_error --><span style="color: #FF0000;">{qf_error}</span><br /><!-- END qf_element_error -->
+            {qf_element}
+        </td>
+    </tr>
+    <!-- END qf_element -->
+    <!-- BEGIN qf_group -->
+    <tr valign="top">
+        <th>
+            <!-- BEGIN qf_group_required --><span style="color: #FF0000;">*</span><!-- END qf_group_required -->
+            {qf_group_label}
+        </th>
+        <td>
+            <!-- BEGIN qf_group_error --><span style="color: #FF0000;">{qf_error}</span><br /><!-- END qf_group_error -->
+            <!-- BEGIN qf_group_loop -->
+                <!-- BEGIN qf_group_element -->{qf_separator}{qf_element}{qf_label}<!-- END qf_group_element -->
+            <!-- END qf_group_loop -->
+        </td>
+    </tr>
+    <!-- END qf_group -->
+
+    <!-- BEGIN options_group -->
+    <tr valign="top">
+            <!-- BEGIN options_group_loop -->
+                <!-- BEGIN options_group_element --><td>{qf_separator}{qf_element}{qf_label}</td><!-- END options_group_element -->
+            <!-- END options_group_loop -->
+    </tr>
+    <!-- END options_group -->
+<!-- END qf_main_loop -->
+{footer}
+<!-- BEGIN qf_required_note -->
+    <tr>
+        <td>&nbsp;</td>
+        <td align="left" valign="top">{qf_required_note}</td>
+    </tr>
+<!-- END qf_required_note -->
+</table>
+</form>

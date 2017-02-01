@@ -1,0 +1,349 @@
+@import url('base.css');
+
+body {
+	font: 0.8125em "Lucida Sans", verdana, arial, helvetica, sans-serif;
+	line-height: 1.25;
+	color: #000;
+	background: #71ab24 url(../images/background.jpg) top repeat-x fixed;
+	margin:0 auto;
+	width:900px;
+}
+
+/**
+ * Header stuff
+ */
+#header {
+	color:#000;
+	background:#fff;
+	font-family: verdana, arial, sans-serif;
+	padding:10px 20px 0 20px;
+	height:78px;
+	/* [1] */
+	overflow:hidden;
+	zoom:1;
+}
+
+#header .wrapped-header {}
+
+#header .brand {
+	float:left;
+	z-index:10;
+}
+
+#header #user-info {
+	list-style:none;
+	float:right;
+}
+
+#header ul {
+	margin:10px 0 0 0;
+	padding:0;
+	list-style:none;
+	float:right;
+	clear:right;
+}
+
+#header ul li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+	font-size:85%;
+}
+
+#header ul li a {
+	float:left; /* float:left instead of display:block for IE (same effect, harmless) */
+	padding:0 10px;
+	color:#807A7A;
+	text-decoration:none;
+	border-right:1px solid #bbb;
+	text-align:center;
+}
+
+#header ul li.last-child a {
+	border-right:0;
+	padding-right:0;
+}
+
+/* with icon */
+#header ul li a img {
+	border:0;
+	vertical-align:middle;
+	margin-right:3px;
+}
+
+
+#header ul li a:hover {
+	color:#720000;
+}
+
+#header ul li a.current {
+	font-weight:bold;
+}
+
+#header ul li.current a {
+	font-weight:bold;
+}
+
+/**
+ * Area between header and content body
+ */
+#fold {
+	background-color:#fff;
+	padding:10px;
+}
+
+#fold div.primary {
+	/* left side rounded goodness */
+	background:/*#720000*/ url(../images/fold-rounder-thick.png) top left no-repeat;
+	margin-right:10px;
+	height:19px;
+}
+
+#fold div.primary div.content {
+	/* right side rounded goodness */
+	float:right;
+	background:/*#720000*/ url(../images/fold-rounder-thick.png) top right no-repeat;
+	height:19px;
+	margin-left:10px;
+	margin-right:-10px;
+	padding-right:10px;
+	color:white;
+}
+
+#fold div.primary a {
+	font-weight: bold;
+	font-size:11px;
+	padding:0;
+	/*color:#eca83b;*/
+	color:white;
+	text-decoration:none;
+}
+
+#fold div.primary a:hover {
+	color:#fff;
+}
+
+/* left side rounded goodness */
+#fold div.secondary {
+	background:/*#eda83b*/ url(../images/fold-rounder-light.png) top left no-repeat;
+	margin-top:3px;
+	margin-right:10px;
+	height:16px;
+}
+
+/* right side rounded goodness */
+#fold div.secondary div.content {
+	float:right;
+	background:/*#eda83b*/ url(../images/fold-rounder-light.png) top right no-repeat;
+	height:16px;
+	margin-left:10px;
+	margin-right:-10px;
+	padding-right:10px;
+}
+
+#fold div.secondary a {
+	font-size:11px;
+	padding:0;
+	color:#720000;
+	text-decoration:none;
+}
+
+#fold div.secondary a:hover {
+	color:#fff;
+}
+
+
+/**
+ * Content body stuff
+ */
+
+/* content wrapper encapsulates everything below header (i.e. the fold, content, and footer sections */
+#content-wrapper {}
+
+/**
+ * Three column fixed-liquid-fixed centered layout.
+ * This method uses the unsemantic, ordered-floating-divs technique
+ * (left-right-center in code, eg http://www.manisheriar.com/holygrail/).
+ * The reason for not using ALA's holy grail technique
+ * (http://www.infocraft.com/articles/holy_grail_on_a_list_apart/)
+ * is that it only works for fullwidth layouts (albeit the most
+ * popular application of such a technique). However, when
+ * centering the layout as we are, resizing horizontally in IE6
+ * (and only IE6!) causes the left column to shift unpredictably.
+ * I couldn't figure out the fix so we're going with this instead.
+ */
+#content {
+	background: #fff;
+	color: #000;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+/* three column layout (|left|center|right|) */
+body.layout-lcr #main {
+	margin-left:250px;   /* LC fullwidth */
+	margin-right:150px;  /* RC fullwidth + CC padding */
+	padding:0 0;         /* CC padding */
+}
+
+/* two column layout (|left|center|) */
+body.layout-lc #main {
+	margin-left:250px;   /* LC fullwidth */
+	padding:0 15px;      /* CC padding */
+}
+
+/* two column layout (|center|right|) */
+body.layout-cr #main {
+	margin-right:150px; /* RC fullwidth */
+	padding:0 15px;     /* CC padding */
+}
+
+/* column |center| */
+#main {}
+
+/* column |left| */
+#left {
+	float: left;
+	width: 220px;        /* LC width */
+	padding: 0 15px;     /* LC padding */
+}
+
+/* column |right| */
+#right {
+	float: right;
+	width: 120px;        /* RC width */
+	padding: 0 15px;     /* RC padding */
+}
+
+#top {
+	padding:0 15px;
+}
+
+#bottom {
+	padding:0 15px;
+}
+
+#footer {
+	clear:both;
+	font-family:verdana, arial, sans-serif;
+	font-size:0.8em;
+	height:50px;
+	background: transparent url(../images/footer-bg.png) bottom left no-repeat;
+	margin-right:15px;   /* pull image in from the right a bit */
+	line-height:1.3em;
+	border-top:1px solid #bbb;
+	position:relative;
+}
+
+/* #footer child nav. Rounds off right-side of footer.  */
+#footer-nav {
+	float:right;
+	padding:3px 10px 0 0;
+	height:47px;        /* #footer height - our padding-top */
+	text-align:right;   /* in case multiple lines */
+	margin-right:-15px; /* pull image out to the right a bit */
+	background: transparent url(../images/footer-bg.png) bottom right no-repeat;
+	line-height:1.5em;
+	border-top:1px solid #bbb;
+	/* since this is a child of #footer our border 
+	 * nests underneath #footer's. Pulls ours up. */
+	margin-top:-1px;    /* -border-top width */
+}
+
+#blurb {
+	margin:0;
+	position:absolute;
+	padding:5px 0 0 10px;
+}
+
+
+/**
+ * Single image rounded corners, fluid width+height
+ */
+.cssbox, .cssbox_body, .cssbox_head, .cssbox_head_inner {
+	/* lower-right image */
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	margin: 0;
+	padding: 0;
+}
+
+.cssbox {
+    padding-right: 4px;       /* the gap on the right edge of the image (not content padding) */
+}
+
+/* top-right image */
+.cssbox_head {
+    background-position: top right;
+    margin-right: -4px;       /* pull the right image over on top of border */
+    padding-right: 8px;       /* right-image-gap + right-inside padding */
+}
+
+/* top-left image */
+.cssbox_head_inner {
+    background-position: top left;
+    margin: 0;                 /* reset */
+    padding: 8px 0 0 8px; /* padding-left = image gap + interior padding ... no padding-right */
+}
+
+/* lower-left corner image */
+.cssbox_body {
+    background-position: bottom left;
+    margin-right: 4px;        /* interior-padding right */
+    padding: 0 0px 8px 8px; /* mirror .cssbox_head right/left */
+}
+
+/**
+ * Simple styled curved around a div
+ */
+.corner-curve {
+	padding:3px 7px 0 0;
+	background: transparent url(../images/corner-gradient.gif) top right no-repeat;
+}
+
+/**
+ * Fancy styled links to look like buttons
+ */
+a.shiny-btn {
+	width:223px;
+	height:42px;
+	display:block;
+	background: transparent url(../images/landing_page/shiny_btn.png) no-repeat;
+	text-align:center;
+	text-transform:uppercase;
+	color:#fff;
+	text-decoration:none;
+	padding-top:11px;
+	font-weight:bold;
+	font-size:25px;
+	letter-spacing:1px;
+}
+
+a.shiny-btn:visited {
+	color:#fff;
+}
+
+a.shiny-btn:hover {
+	color:#fff;
+	text-decoration:underline;
+}
+
+/**
+ * Page/Layout specific instructions
+ */
+
+h1.page-title {
+	font-size: 30px;
+}
+
+.terms-agreement-text
+{
+	font-weight:bold;
+}
+
+/*
+Notes:
+[1] - http://www.robertnyman.com/2007/04/12/how-to-clear-css-floats-without-extra-markup-different-techniques-explained/
+[2] - green logo color is 8cc63f
+*/

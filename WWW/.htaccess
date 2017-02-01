@@ -1,0 +1,71 @@
+###############################################################################
+# 
+#------------------------------------------------------------------------------
+# Настройки для mod_rewrite rurenter.ru
+#------------------------------------------------------------------------------
+# $Id: .htaccess 402 2013-04-17 14:34:23Z xxserg@gmail.com $
+###############################################################################
+
+
+RewriteEngine on
+Options +FollowSymlinks
+RewriteBase /
+
+ErrorDocument 404 /error_404.html
+RewriteRule ^error_(.*).html                                        index.php?op=static&act=error_$1            [L]
+
+RewriteRule ^admin/([a-z]*)/                                        admin.php?menu=$1                            [L,QSA]
+
+RewriteRule ^admin/                                                 admin.php                                    [L]
+
+RewriteRule < /
+
+#Главная страница
+RewriteRule ^$                                                    index.php?op=countries&act=index              [L,QSA]
+RewriteRule ^(ru|en)/$                                            index.php?op=countries&act=index&lang=$1      [L,QSA]
+
+RewriteRule ^(ru|en)/                                             index.php?lang=$1 [E=MYLANGUAGE:$1,QSA]
+
+RewriteRule ^onpay_api.php$					index.php?op=booking&act=pay      [L,QSA]
+RewriteRule ^wm.php$						index.php?op=booking&act=paywm      [L,QSA]
+RewriteRule office/paypal.php$					index.php?op=booking&act=paypal      [L,QSA]
+RewriteRule office/pay_success$				office.php?op=static&act=pay_success      [L,QSA]
+RewriteRule office/error_pay$					office.php?op=static&act=error_pay      [L,QSA]
+
+RewriteRule office/                                                office.php                                   [L,QSA]
+
+
+RewriteRule ^sale/?$                                             index.php?op=countries&act=index&sale=1       [L,QSA]
+
+
+
+#Регистрация рекламодателя
+RewriteRule reg/	                                           index.php?op=pages&act=show&alias=social      [L,QSA]
+RewriteRule regsite/	                                           index.php?op=users&act=new                    [L,QSA]
+
+RewriteRule ^activate/$                                            index.php?op=users&act=activate		[L,QSA]
+RewriteRule ^remind/$                                              index.php?op=users&act=remind		[L]
+
+#Напоминание пароля
+RewriteRule ^remind/$                                              index.php?op=users&act=remind		[L]
+
+
+
+
+
+#Категория
+RewriteRule pages/([^/]+)					index.php?op=pages&act=show&alias=$1      [L,QSA]
+
+#Виллы по регионам
+#RewriteRule regions/([\S\s]+)					index.php?op=villa&act=index&alias=$1      [L,QSA]
+RewriteRule (sale/)?regions/([\S\s]+)				index.php?op=villa&act=index&alias=$2&sale=$1      [L,QSA]
+RewriteRule search/$						index.php?op=villa&act=index      [L,QSA]
+
+#Карточка виллы
+RewriteRule villa/(\d+).html$					index.php?op=villa&act=show&id=$1      [L,QSA]
+
+#Форма обратной связи
+RewriteRule contact/$						index.php?op=query&act=new      [L,QSA]
+
+#Loginza
+RewriteRule ^social/(\d+)$					loginza.php?villa_id=$1    [L]

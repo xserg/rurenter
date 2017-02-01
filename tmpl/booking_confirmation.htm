@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title>Booking confirmation - rurenter.ru</title>
+<style>
+.squareCorners #b_confirmation_body .section {
+    border-radius: 3px !important;
+}
+#b_confirmation_body .section {
+    clear: both;
+    width: 96%;
+    padding: 2%;
+    float: left;
+    border: 3px solid #E6EDF6;
+    position: relative;
+    left: -3px;
+    border-radius: 1em;
+}
+
+.pb-conf-overview-table {
+    width: 100%;
+}
+table {
+    margin-bottom: 0.5em;
+    margin: 0px;
+    border-spacing: 0px;
+    border: 0px none;
+}
+td, th {
+    padding: 0px;
+    border: 0px none;
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+#b_confirmation_body .section table th {
+    font-weight: bold;
+    padding-right: 1em !important;
+}
+#b_confirmation_body .section table th, #b_confirmation_body .section table td {
+    padding: 0.3em 0px;
+}
+
+#book_conf_summary table{margin-bottom:.5em} 
+#b_confirmation_body th{width:200px}
+#b_confirmation_body .price_breakdown tr.total td{padding-top:5px}
+.pb-conf-overview-table .hotel_image{width:90px}
+#b_confirmation_body {margin-bottom:.3em}
+#b_confirmation_body th.hotel_name{font-size:18px;padding-bottom:10px}
+
+body {
+    color: #003580;
+    font: small/1.2 Arial,Helvetica,sans-serif;
+}
+</style>
+
+</head>
+
+ <body>
+
+<div id="column_holder" class="conf_restructured_content squareCorners">
+<div id="b_confirmation_body" class=" screen main_column conf_align">
+
+<div id="column_holder" class="conf_restructured_content squareCorners">
+<div id="book_conf_summary" class="section">
+<table class="pb-conf-overview-table">
+<tbody>
+<tr>
+<th class="hotel_name" colspan="2">
+<a href="{villa_link}" class="custom_track">{villa_name}</a>
+<span class="nowrap pb-conf-rating">
+
+<span rel="300" class="jq_tooltip use_sprites icon_thumbyellow ">&nbsp;</span>
+</span>
+</th>
+<td rowspan="8" class="hotel_image">
+<img alt="" class="jq_tooltippex round6" src="{villa_img}" height="90" width="90">
+</td>
+</tr>
+<tr>
+<th>Номер заказа</th>
+<!-- ClickTaleExcludeBlock -->
+<td class="ClickTaleSensitive">{booking_id}</td>
+<!-- EndClickTaleExcludeBlock <td>XXX</td> -->
+</tr>
+
+<tr>
+<th>
+Арендатор
+</th>	
+<td class="ClickTaleSensitive">
+<!-- ClickTaleExcludeBlock -->
+<b>{user_name}</b> {user_email}
+<!-- EndClickTaleExcludeBlock -->
+</td>
+</tr>
+</tbody></table>
+<table class="reservation_details">
+<tbody>
+<tr class="b_conf_overview">
+<th>Сведения о бронировании</th>
+<td>
+{days} ночь
+</td>
+</tr>
+<tr class="b_conf_checkin">
+<th>Заезд</th>
+<td>
+{start_date}
+</td>
+</tr>
+<tr class="b_conf_checkout">
+<th>Отъезд</th>
+<td>
+{end_date}
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="price_breakdown ">
+<tbody>
+<tr class="charge extracharges included rooms">
+<th class="key">
+Предоплата (Оплачено)
+</th>
+<td class="value">{prepay} {currency}</td>
+</tr>
+<tr class="charge extracharges included vat ">
+<th class="key">Остаток</th>
+<td class="value">{balance} {currency}</td>
+</tr>
+<!-- merlin: PM: 1 DPM: 1 -->
+
+<tr class="total extracharges ">
+<td style="display:none">
+
+</td>
+<th class="key">
+Общая стоимость номера:
+</th>
+<td class="value alignright largetotaltext">
+<span class="selectedCur user_currency" style="font-weight: normal!important; padding-right: .5em;">
+<span id="s_cost_with_addons" tc=""></span></span>
+<span id="cost_with_addons" tc="Общая стоимость">{price} {currency}</span>
+<br>
+</td>
+</tr>
+<tr>
+<th class="key"> </th>
+<td class="value"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>

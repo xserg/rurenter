@@ -1,0 +1,3 @@
+These tests require Simple Test: http://www.lastcraft.com/simple_test.php
+
+Edit the simple_include.php script and set your SimpleTest install dir

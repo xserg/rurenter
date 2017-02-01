@@ -1,0 +1,353 @@
+.ha-clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.ha-clearfix {display:inline-block;}
+* html .ha-clearfix, {height:1%;}
+.ha-clearfix {display:block;}
+
+
+.ha-propinfo					{font-size: 13px; color: #777777; padding-bottom: 20px; position: relative; top: 0; left: 0; clear: both; }
+.ha-propinfo b					{color: #333333; font-weight: normal; }
+.ha-propinfo a.ha-previewlink	{color: #FF6600 !important; }
+.ha-propinfo a					{color: #0F6DB6; padding: 0 3px; }
+.ha-propinfo div				{text-align: right; position: absolute; top: 0; right: 0; width: 300px; }
+.ha-propinfo h2					{
+	margin: 0; 
+	padding: 2px 0 0; 
+	font-size:19px; 
+	font-style: italic; 
+	color: #555555; 
+	font-family: Verdana, Arial, sans-serif; 
+	font-weight: normal; 
+	padding-left: 24px; 
+	background:url("custom-title-icons-sprite-1.png") no-repeat scroll 1px 2px transparent;
+	}
+
+a.ha-arrowlink					{white-space: nowrap; padding-right: 8px; background: url(arrow-right-blue.png) 100% 3px no-repeat;  }
+
+iframe.haframe					{width: 780px; height: 3200px; border: white 0 solid; }
+.isiframe .cssMainPane,
+.isiframe .cssMainPain			{width: 770px; }
+
+body.isiframe, 
+.isiframe #main span.corner		{background-color: #F6F7F9 !important; }
+hr 								{border:0; height: 1px; background: #CFE1EF; color: #CFE1EF; margin: 1.5em 0;}
+
+.isiframe #logo,
+.isiframe #masthead,
+.isiframe #footer,
+.isiframe .multibrand			{display: none; }
+
+.cssBoxContainer textarea {
+	width: 650px;
+}
+.cssBoxContainer,
+.cssBoxContainer td,
+.cssBoxContainer li				{font-size: 12px; color: #555555; }
+.cssBoxContainer textarea,
+.cssBoxContainer select			{font-size: 12px; color: #333333; }
+.cssPaneBorder_1 a				{color: #0F6DB6; }
+.cssBoxContainer b, 
+.cssBoxContainer strong, 
+.cssBoxContainer h2, 
+.cssBoxContainer h3				{color: #333; }
+.cssPaneContainer				{border: #CFE1EF 1px solid; border-top-width: 0; }
+form							{margin: 0; padding: 0; }
+
+
+/* links */
+.cssPaneBorder_1 a				{color: #ff6600; font-size: 13px; position: relative; top: -10px; left: 0; *top: -4px; *left: 20px; _display: block; _width: 120px; }
+.cssBoxContainer a				{color: #0F6DB6; }
+
+a {outline: none;}
+a:active, a:focus {outline: 0}
+:focus {-moz-outline-style: none;}
+:-moz-any-link:focus {outline: none;}
+
+/* --- buttons --- */
+
+.orangebutton,
+.cssBoxContainer input.editcontact,
+#geoSavePrivacy,
+#btn_save,
+.cssButtons_1 .cssButtons {
+	background: url(lm-button.png) no-repeat; 
+	border-width: 0; 
+	color: white; 
+	font-size: 13px !important; 
+	height: 20px; 
+	padding: 1px 6px 3px; 
+	border-right: #ab8359 1px solid;
+	border-bottom: #ab8359 1px solid;
+	_padding: 0;
+	*height: 21px;
+}
+#btn_save_and_continue,	
+.cssButtons_1 .cssButtonsSC 	{
+	background: url(lm-button.png) no-repeat; 
+	border-width: 0; 
+	color: white; 
+	font-size: 13px !important; 
+	height: 20px; 
+	padding: 1px 6px 3px; 
+	border-right: #ab8359 1px solid;
+	border-bottom: #ab8359 1px solid;
+	_padding: 0;
+	*height: 21px; 
+	}
+span.cssButtons_1{
+	background-color: transparent;
+	}
+
+.cssBoxContainer input.editcontact {position: relative; top: 0; left: -80px;}
+.isiframe .cssBoxContainer input.editcontact{left: -54px;}
+
+/* --- tabs --- */
+.hatabs li, .hatabs a, .hatabs			{background-image: none; }
+.cssPaneBorder							{background: url(lm-tabs3.png) 100% -90px no-repeat;}
+.div-roundcornertopleft								{background: url(lm-tabs3.png)  0 0 no-repeat; margin-right: 10px; padding: 16px 0 16px 18px; _padding-bottom: 10px; }
+/*ul.hatabs								{background: url(lm-tabs3.png)  0 0 no-repeat; margin-right: 10px; padding: 16px 0 16px 18px; _padding-bottom: 10px; }*/ 
+ul.hatabs li.hatabs-selected a			{color: #649F44 !important; }
+li.hatabs-first							{border-left-color: #fff !important; }
+
+
+.hatabs li								{padding-right: 2px; height: 28px; border-left: #CFE1EF 1px solid; }
+ul.hatabs a								{
+	color: #0F6DB6; 
+	font-size: 12px; 
+	font-weight: normal; 
+	padding: 2px 0 2px 6px; 
+	text-align: center; 
+	line-height: 13px; 
+	padding-top: 8px;
+	}
+.hatabs li.hatabs-2lines a				{padding-top: 2px;}
+
+
+/* --- overview --- */
+.ha-overview .cssPaneContainer			{margin: 0; padding: 0 22px 0; _padding-top: 4px; }
+.isiframe .ha-overview .cssPaneContainer	{_padding-left: 30px; }
+.ha-overview .cssPaneContainer a		{color: #0F6DB6 !important; }
+.ha-overview .overviewContent			{font-size: 12px; color: #555555; padding: 20px 0 0; margin: 0; border-top: #CFE1EF 1px solid; }
+.rounded hr								{margin: 10px 0; _margin: 4px 0; }
+.ha-overview .rounded					{margin-bottom: 0; }
+.ov-row 								{padding-bottom: 20px; }
+.ov-thinbox								{width: 290px; margin-right: 24px; float: left;  }
+.ov-splitbox								{width: 440px; margin-right: 24px; float: left;  }
+.ov-widebox								{width: 590px; margin-right: 24px; float: left;  }
+
+.isiframe .ov-thinbox						{width: 290px; }
+.isiframe .ov-splitbox						{width: 350px; }
+.isiframe .ov-widebox						{width: 410px; }
+
+.overviewContent .last					{margin: 0; }	
+#ov-upgrade .rbinner					{padding: 14px 20px; }
+.ha-overview .rounded.rbglaretop .rbtitle .rbtinner	{padding-top: 14px; padding-bottom: 12px; }
+#ov-mapspromo a							{display: block; width: 290px; height: 242px; background: url(lm-mapspromo.jpg) 0 0 no-repeat; text-decoration: none; }
+
+
+/* --- location --- */
+.ha-location .cssBoxBody_2				{padding-top: 20px; }
+/*.ha-location div.addressform			{padding: 0; }*/
+.isiframe .ha-location div.geoAddressForm			{width:100%;}
+.ha-location div.fields					{width:344px;}
+.ha-location div.geo					{font-family: Arial, sans-serif; }
+/*.ha-location #geoSavePrivacy			{position: relative; left: -198px; top: 28px; }*/
+.ha-location div.geoAddressForm input 	{width: auto; }
+
+
+/* --- photos --- */
+
+.ha-photos .cssBoxContainer				{padding-top: 10px; padding-left:12px; _padding-top: 0; } 
+.ha-photos #photoIntroContainer li		{padding: 0; font-size: 1.1em; padding-bottom: 3px; }
+.ha-photos .cssLabel td					{background-color: white;}
+.ha-photos .cssData_1					{background-color: transparent; }
+
+
+/* --- amen --- */
+.ha-amen .amenities td					{background-color: white; border-top: #CFE1EF 0 solid; }
+.ha-amen #amenitiesBedroom .addAmenitiesRowLink,
+.ha-amen #amenitiesBathroom .addAmenitiesRowLink	{background-color: white !important; border-width: 0; background-image: none !important;  }
+.ha-amen .amenities th					{background-color: transparent !important; color: #333;}
+.ha-amen .amenities .columnGroup		{color: #777777; font-weight: bold; border-width: 0;}
+.ha-amen th								{border-bottom: #CFE1EF 1px solid; }
+.ha-amen .columnGroupings th			{border-color: white; }
+
+/* --- rates --- */
+.ha-rates #ownersRentalRatesTable .columnGroupings th {
+	background-color: transparent; 
+	color: #333; 
+	border-width: 0; 
+}
+.ha-rates #ownersRentalRatesTable th {
+	/*background-color: transparent;*/ 
+	color: #fff; 
+	border-bottom:1px solid #CFE1EF; 
+	border-left:1px solid white; 
+	border-right:1px solid white; 
+	border-top:1px solid #CFE1EF;
+	}
+.ha-rates #ownersRentalRatesTable td		{color: #333; }
+.ha-rates #ownersRentalRatesTable .columnGroupings th.columnGroup {border: #CFE1EF 1px solid; }
+.ha-rates #ownersRentalRatesBeginDate.date	{border-left: #CFE1EF 1px solid !important;}
+.ha-rates #ownersRentalRatesTable th.first	{border-right: #CFE1EF 1px solid !important;}
+.ha-rates #ownersRentalRatesTable #ownersRentalRatesMinimumStay		{border-left: #CFE1EF 1px solid !important;}
+#ownersRentalRatesTable #addRate			{text-align: left; }
+#ownersRentalRatesTable tfoot td			{border-bottom: #CFE1EF 1px solid; border-top: #CFE1EF 1px solid; text-align: left; }
+.ha-rates #ownersRentalRatesEndDate			{border-right: #CFE1EF 1px solid !important; }
+
+/* --- offers --- */
+.ha-offers .cssBoxBody						{padding: 10px 0 0 6px; }
+.ha-offers .productInfo						{background-color: white; padding: 0; }
+.ha-offers .cssButtons						{position: relative; left: 0; top: 0; }
+
+/* --- extra --- */
+.ha-extra .cssBoxBody_1						{border-top-width: 0; }
+
+.cssMainPane td.td-ulcorner {
+	font-size: 1pt !important;
+}
+.td-ulcorner {
+	width: 5px; 
+	height: 5px;
+	background: url(ulcorner.jpg) no-repeat;
+	font-size: 0pt !important;
+}
+
+.td-uhorzline {
+	width: 5px; 
+	height: 5px;
+	background: url(uhorzline.jpg) repeat-x;
+	font-size: 0 !important;
+}
+
+.td-urcorner {
+	width: 5px; 
+	height: 5px;
+	background: url(urcorner.jpg) no-repeat;
+	font-size: 0 !important;
+}
+
+.td-lvertline {
+	width: 5px; 
+	height: 5px;
+	background: url(lvertline.jpg) repeat-y;
+	font-size: 0 !important;
+}
+
+.td-rvertline {
+	width: 5px; 
+	height: 5px;
+	background: url(rvertline.jpg) repeat-y;
+	font-size: 0 !important;
+}
+
+.td-llcorner {
+	width: 5px; 
+	height: 5px;
+	background: url(llcorner.jpg) no-repeat;
+	font-size: 0 !important;
+}
+
+.td-lhorzline {
+	width: 5px; 
+	height: 5px;
+	background: url(lhorzline.jpg) repeat-x;
+	font-size: 0 !important;
+}
+
+.td-lrcorner {
+	width: 5px; 
+	height: 5px;
+	background: url(lrcorner.jpg) no-repeat;
+	font-size: 0 !important;
+}
+
+.lm-tabs {
+	margin-top: -5px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	
+	position: relative;
+}
+
+.td-tabtext {
+	padding: 0px;
+}
+.td-vertline {
+	background-color: #CFE1EF;
+	width: 1px;
+}
+
+.table-tabs .tablink span {
+	display: -moz-inline-box;
+	display:inline-block;
+	*display:inline;
+	text-align: center;
+	padding: 8px 10px;
+	font-size: 13px !important;
+	*zoom: 1;
+}
+
+
+.table-tabs .tablink,
+.table-tabs .tablink:visited,
+.table-tabs .tablink:hover {
+	color: #2D7CAB;
+	text-decoration: none !important;
+	cursor: pointer;
+}
+
+a.tablink:hover,
+.table-tabs .tablink:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.table-tabs .tabtextselected {
+	background: #0d6cb6;
+}
+.table-tabs .tabtextselected a span {
+	color: #fff;
+	text-decoration: none !important;
+}
+
+.td-uldbheader {
+	width: 5px; 
+	height: 5px;
+	background: url(uldbheader) no-repeat;
+}
+
+.td-udbheader {
+	height: 5px;
+	background: url(udbheader) repeat-x;
+}
+
+.td-urdbheader {
+	width: 5px; 
+	height: 5px;
+	background: url(urdbheader) no-repeat;
+}
+
+.table-propSummary {
+	width: 100%;
+}
+.table-propSummary a {
+	text-decoration: underline;
+	color: #2d2bfa;
+}
+.tr-propSummaryTopRow {
+	background-color: #d3dfeb;
+}
+.td-propSummaryTopRow {
+	padding: 5px 10px 10px;
+	color: #666666;
+}
+.td-propSummaryTopRow span {
+	background: transparent url("arrowGray.gif") no-repeat left center;
+	padding-left: 9px;
+}
+
+.h1-sectionheading {
+	padding-top: 12px;
+	padding-left: 8px;
+}
+

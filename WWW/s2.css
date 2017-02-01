@@ -1,0 +1,49 @@
+.squareCorners #b_confirmation_body .section {
+    border-radius: 3px !important;
+}
+#b_confirmation_body .section {
+    clear: both;
+    width: 96%;
+    padding: 2%;
+    float: left;
+    border: 3px solid #E6EDF6;
+    position: relative;
+    left: -3px;
+    border-radius: 1em;
+}
+
+.pb-conf-overview-table {
+    width: 100%;
+}
+table {
+    margin-bottom: 0.5em;
+    margin: 0px;
+    border-spacing: 0px;
+    border: 0px none;
+}
+td, th {
+    padding: 0px;
+    border: 0px none;
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+#b_confirmation_body .section table th {
+    font-weight: bold;
+    padding-right: 1em !important;
+}
+#b_confirmation_body .section table th, #b_confirmation_body .section table td {
+    padding: 0.3em 0px;
+}
+
+#book_conf_summary table{margin-bottom:.5em} 
+#b_confirmation_body th{width:200px}
+#b_confirmation_body .price_breakdown tr.total td{padding-top:5px}
+.pb-conf-overview-table .hotel_image{width:90px}
+#b_confirmation_body {margin-bottom:.3em}
+#b_confirmation_body th.hotel_name{font-size:18px;padding-bottom:10px}
+
+body {
+    color: #003580;
+    font: small/1.2 Arial,Helvetica,sans-serif;
+}

@@ -1,0 +1,86 @@
+.resizable-handle {
+	z-index:100;
+	font-size:1px;
+	line-height:6px;
+	background:white;
+	zoom:1;
+}
+
+.resizable-handle.e {
+	background:url(../images/sizer/e-handle.gif);
+	background-position: left;
+	width:6px;
+	cursor:e-resize;
+	right:0;
+	top:0;
+	height:100%;
+}
+
+.resizable-handle.s {
+	background:url(../images/sizer/s-handle.gif);
+	background-position: top;
+	width:100%;
+	cursor:s-resize;
+	left:0;
+	bottom:0;
+	height:6px;
+}
+
+.resizable-handle.w {
+	background:url(../images/sizer/e-handle.gif);
+	background-position: left;
+	width:6px;
+	cursor:w-resize;
+	left:0;
+	top:0;
+	height:100%;
+}
+.resizable-handle.n {
+	background:url(../images/sizer/s-handle.gif);
+	background-position: top;
+	width:100%;
+	cursor:n-resize;
+	left:0;
+	top:0;
+	height:6px;
+}
+.resizable-handle.se {
+	background:url(../images/sizer/se-handle.gif);
+	background-position: top left;
+	width:6px;
+	cursor:se-resize;
+	right:0;
+	bottom:0;
+	height:6px;
+	z-index:101;
+}
+.resizable-handle.nw {
+	background:url(../images/sizer/nw-handle.gif);
+	background-position:bottom right;
+	width:6px;
+	cursor:nw-resize;
+	left:0;
+	top:0;
+	height:6px;
+	z-index:101;
+}
+.resizable-handle.ne {
+	background:url(../images/sizer/ne-handle.gif);
+	background-position: bottom left;
+	width:6px;
+	cursor:ne-resize;
+	right:0;
+	top:0;
+	height:6px;
+	z-index:101;
+}
+.resizable-handle.sw {
+	background:url(../images/sizer/sw-handle.gif);
+	background-position: top right;
+	width:6px;
+	cursor:sw-resize;
+	left:0;
+	bottom:0;
+	height:6px;
+	z-index:101;
+}

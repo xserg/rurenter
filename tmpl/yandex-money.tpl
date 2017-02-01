@@ -1,0 +1,1 @@
+<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/shop.xml?account=410012436237133&quickpay=shop&payment-type-choice=on&writer=seller&targets={description}&targets-hint=&default-sum={ammount}&button-text=01" width="450" height="200"></iframe>

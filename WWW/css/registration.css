@@ -1,0 +1,97 @@
+/* Sign-up page (trials + subscriptions) */
+body.registration #main {
+	margin-right:390px; /* RC width + RC padding */
+	padding:0 15px;
+}
+
+body.registration #right {
+	width: 375px;        /* RC width */
+	padding:0 15px 0 0;  /* RC padding */
+}
+
+fieldset.errors {
+	border:1px solid red;
+}
+
+fieldset legend {
+	font-weight:bold;
+	font-size:120%;
+}
+
+.error-list li, .error-list label {
+	color:red;
+}
+
+.txtArea {
+	font-size:110%;
+	font-weight:bold;
+}
+
+#btnNext {
+	float:right;
+}
+
+#aoi-select-map {
+	width:400;
+	height:400px;
+	border:1px solid #ccc;
+}
+
+.help-section {
+	font-size:80%;
+	background:#efefef;
+	margin-bottom:15px;
+	padding:10px;
+	margin-top:8px;
+	overflow:hidden;
+}
+
+/* Right-side help content */
+.help-section img {
+	vertical-align:middle;
+}
+
+/**
+ * Field label: Field value stuff
+ */
+
+/* row */
+dl {
+	clear:both;
+	padding:2px 0; /* row spacing (margin-top doesn't work) */
+}
+
+/* label col (left side) */
+dt {
+	float:left;
+	text-align:right; /* look prettier as it lines up */
+	width:100px;      /* default width. override if needed in specific dialogs below */
+	margin-right:5px; /* spacing between label and value */
+}
+
+/* value col (right side) */
+dd {
+	float:left;
+	text-align:left;
+	margin-right:3px;
+}
+
+dd input.text-input {
+	width:162px;
+}
+
+/**
+ * dl's can contain floats. We want to clear those floats without extra markup.
+ * See http://www.robertnyman.com/2007/04/12/how-to-clear-css-floats-without-extra-markup-different-techniques-explained/
+ */
+/* Opera, Gecko, Safari: Insert invisible clearing content after section. */
+dl:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+/* IE7 and below: overflow hidden + "layout" trigger */
+dl { *overflow:hidden;	zoom:1; }
+

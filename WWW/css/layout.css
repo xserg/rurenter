@@ -1,0 +1,28 @@
+/*
+-----------------------------------------------
+Site Layout Styles
+Author:   akella at http://cssing.org.ua
+Version:  16 Sep 2008
+----------------------------------------------- */
+body{
+	text-align:center;
+	}
+.in, .page{
+	width:916px;
+	text-align:left;
+	margin:0 auto;
+	}
+	.sec{
+		width:228px;
+		float:left;
+		}
+	.content{
+		float:right;
+		width:646px;
+		display: inline;
+
+		}
+		.footer{
+			padding:30px 0 10px 270px;
+			clear:both;
+			}

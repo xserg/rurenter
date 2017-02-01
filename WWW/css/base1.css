@@ -1,0 +1,395 @@
+/*
+-----------------------------------------------
+Site Base Styles
+Author:   akella at http://cssing.org.ua
+Version:  16 Sep 2008
+----------------------------------------------- */
+*{margin:0;padding:0}
+body{
+	font:62.5%/1 Tahoma, arial,sans-serif;
+	}
+/* =Misc(links)
+----------------------------------------------- */
+a img,fieldset{border:none}
+.pda, .print, legend{display:none}
+/*a{color:#fcaa08;}*/
+a{color:#666;}
+/* =Header
+----------------------------------------------- */
+#header{
+	//background:#191919;
+	background:#EEEEEE;
+	height:150px;
+	margin-bottom:41px;
+	}
+#header .in{
+	position:relative;
+	}
+#header h1 a{
+	position:absolute;
+	left:15px;
+	top:34px;
+	width:349px;
+	height:84px;
+	font-size:21px;
+	font-weight:normal;
+	overflow:hidden;
+	display:block;
+	position:relative;
+	}
+	#header h1 a span{
+		position:absolute;
+		width:349px;
+		height:84px;
+		top:0;
+		left:0;
+		background:transparent url(../img/tt.png) no-repeat 0 0;
+		cursor:hand;
+		}
+#header p{
+	position:absolute;
+	top:61px;
+	left:725px;
+	text-align:left;
+	padding-left:27px;
+	font-size:1.2em;
+	line-height:1.3;
+	color:#cbcbcb;
+	}
+#header p.loggedin{
+	padding-left:0;
+	background:none;
+	width:250px;
+	right:0;
+	line-height:1.5;
+	}
+	#header p.loggedin img{
+		float:left;
+		margin-right:14px;
+		}
+	#header .exit{
+		color:#a80b0b;
+		padding-right:13px;
+		background:url(../img/exit.png) no-repeat 100% 100%;
+		}
+/* =Content
+----------------------------------------------- */
+.content{
+	font-size:1.2em;
+	line-height:1.3;
+	}
+	.content p{
+		margin-bottom:1em;
+		}
+	.content h1{
+		font:normal 2.5em/1.1 "Myriad Pro", arial,sans-serif;
+		margin:15px 0 5px 0;
+		}
+		.ins .content h1{
+			margin-top:0;
+		}
+	.content h2{
+		font:normal 1.5em/1.1 "Myriad Pro", arial,sans-serif;
+		margin:5px 0 15px 0;
+		}
+.team{
+	margin-top:50px;
+	}
+.pers{
+	width:100%;
+	overflow:hidden;
+	margin-bottom:24px;
+	color:#2f2f2f;
+	}
+	.pers img{
+		float:left;
+		margin-right:18px;
+		}
+	.pers p{
+		zoom:1;
+		display:table;
+		}
+.phones{
+	color:#2f2f2f;
+	line-height:1.4;
+	}
+.adr{
+	font-size:1.5em;
+	}
+/* =Search
+----------------------------------------------- */
+	.sinp{
+		width:558px;
+		height:21px;
+		line-height:21px;
+		border:none;
+		background:url(../img/search.png) no-repeat 0 0;
+		font-size:12px;
+		padding-left:30px;
+		}
+		.sinp:focus{
+			outline:none;
+			}
+	.search .row{
+		margin-bottom:10px;
+		}
+	.search .submit{
+		overflow:visible;
+		padding:1px 5px;
+		margin-left:0px;
+		font-size:12px;
+		}
+	.search input, .search select,.search label{
+		vertical-align:middle;
+		}
+		.search .row{
+			font-size:1.5em;
+		}
+		.search select{
+			margin-left:3px;
+			margin-right:3px;
+			font-size:10px;
+			}
+			.search select option{
+				margin-right:5px;
+				padding-right:3px;
+				}
+			.search select.yy{
+				margin-right:10px;
+				}			
+			.search select.dd{
+				margin-left:10px;
+				}
+.content .sresults{
+	margin-top:30px;
+		font:normal 2.4em/1.1 "Myriad Pro", arial,sans-serif;
+		color:#acacac;
+		position:relative;
+		width:100%;
+	}		
+.content .sresults b{
+	font-weight:normal;
+	color:#000;
+	}
+	.csv{
+		position:absolute;
+		font-size:12px;
+		bottom:0;
+		right:0;
+		color:#1fa7e8;
+		}
+.data{
+	width:100%;
+	border-collapse:collapse;
+	border-spacing:0;
+	}
+	.data thead th span{
+		color:#2f2f2f;
+		border-bottom:1px dashed #2f2f2f;
+		padding-bottom:2px;
+		}
+		.data thead a{
+			color:#2f2f2f;
+			text-decoration:none;
+			}
+		.data thead th{
+			color:#c1c1c1;
+			font-weight:normal;
+			text-align:left;
+			padding-bottom:18px;
+			padding-right:10px;
+			padding:11px 10px 18px 0;
+			}
+			.data thead th.td-date, .data .td-date{
+				padding-left:11px;
+				background:#f8f8f8;
+				}
+				.data thead th.td-date a{
+					padding-right:12px;
+					background:url(../img/tddate.png) no-repeat 100% 7px;
+				}
+				.td-date{
+					color:#2f2f2f;
+					}
+		.data td, .data th{
+			vertical-align:top;
+		}
+		.data tbody td{
+			padding-bottom:23px;
+			padding-left:5px;
+		}
+		.data tbody .td-name {
+			padding-right:6px;
+		}
+	.data tbody .td-name a{
+		color:#1fa7e8;
+		text-align:left;
+		font-weight:normal;
+		}
+		.data .acts{
+			width:60px;
+			padding-left:10px;
+			}
+.sresults img{
+	vertical-align:baseline;
+	}
+.info{
+	width:100%;
+	border-spacing:0;
+	border-collapse:collapse;
+	margin-bottom:2em;
+	}
+	.info th{
+		font-weight:normal;
+		width:130px;
+		text-align:left;
+		color:#b1b1b1;
+		vertical-align:top;
+		padding-bottom:10px;
+		}
+	.info td a{
+		color:#000;
+		}
+	.info td{
+		color:#2f2f2f;
+		vertical-align:top;
+		}
+.map{
+	display:block;
+	margin-bottom:2em;
+	}
+.tth{
+	list-style:none;
+	margin-bottom:2em;
+	}
+	.tth li{
+		margin:.5em 0;
+		}
+.whattodo{
+	list-style:none;
+	height:32px;
+	width:100%;
+	/*margin-bottom:2em;*/
+	overflow:hidden;
+	}
+	.whattodo li{
+		float:left;
+		margin-right:10px;
+		}			
+		.whattodo li a{
+			float:left;
+			background:url(../img/what.png) no-repeat 100% 0;
+			padding-right:17px;
+			color:#1fa7e8;
+			cursor:hand;
+			}
+			.whattodo li a span{
+				display:block;
+				height:32px;
+				line-height:32px;
+				background:url(../img/what.png) no-repeat 0 0;
+				padding-left:17px;
+				}
+/* =Secondary(sidebar)
+----------------------------------------------- */
+.sec{
+	font-size:1.8em;
+	}
+.sec ul{
+	list-style:none;
+	}
+.sec li{
+	padding-left:15px;
+	}
+	.sec li a{
+		display:block;
+		zoom:1;
+		border-top:1px solid #e5e5e5;
+		padding:8px 0 9px 0;
+		}
+		.sec li li a{
+			border:none;
+			}
+.sec a{
+	color:#000;
+	//text-decoration:none;
+	}
+	.nav{
+		overflow:hidden;
+		width:231px;
+		padding-right:12px;
+		}
+	.sec li{
+		margin-top:-1px;
+		}
+/*submenu*/
+	.sec li ul{
+		border-bottom:1px solid #e5e5e5;
+		}
+	.sec li.o{
+		//background:url(../img/arr.png) no-repeat 0 .9em;
+		}
+		.sec li li{
+			font-size:.75em;
+			}
+	.sec li.o a{
+		}
+	.sec li.o li a{
+		padding:6px 0 8px 0;
+		color:#676767;
+		}
+	.sec li.c{
+		background:url(../img/arrc.png) no-repeat 0 .9em;
+		}
+.nav .here{
+	background:url(../img/here.png) no-repeat 100% 50%;
+	margin-right:-12px;
+	position:relative;
+	}
+	.nav .here a{
+		color:#fff;
+		border:none;
+		}
+	.nav li li.here{
+		background:url(../img/here.png) no-repeat 100% 50%;
+		}
+		.nav li li.here a{
+			color:#d6d6d6;
+			}
+/* =Footer
+----------------------------------------------- */
+.footer{
+	font-size:1.2em;
+	color:#cbcbcb;
+	}
+	.footer a{
+		color:#cbcbcb;
+		}
+
+label{
+				display:inline;
+				font-weight:normal;
+				margin-left:10px;
+				padding-bottom:1px;
+				}
+
+.form{
+	width:100%;
+	border-spacing:0;
+	border-collapse:collapse;
+	margin-bottom:4em;
+	}
+	.form th{
+		font-weight:normal;
+		width:150px;
+		text-align:left;
+		color:#b1b1b1;
+		padding-bottom:5px;
+		}
+	.form td a{
+		color:#000;
+		}
+	.form td{
+		color:#2f2f2f;
+		padding-bottom:2px;
+		}
