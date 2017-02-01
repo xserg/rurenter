@@ -5,8 +5,6 @@
  * $Id: index.php 452 2013-11-12 13:05:10Z xxserg@gmail.com $
  */
 
-//echo phpinfo();
-
 //echo '<pre>';
 //print_r($_SERVER);
 
